@@ -1,0 +1,38 @@
+        .bg_2 {
+            @include wh(100%, 100%);
+            position: fixed;
+            background: #332c1c;
+        }
+        
+        .common_content {
+            @include wh(100%, 100%);
+            padding: 1rem 2rem;
+            position: relative;
+            color: #fff;
+             background: #332c1c;
+            h2 {
+                color: #ff9900;
+                font-size: 1.6rem;
+                margin: 0.5rem 0;
+            }
+            p {
+                color: #fff;
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+            }
+            ul {
+                margin-bottom: 2rem;
+                li {
+                    color: #fff;
+                    font-size: 1.4rem;
+                    margin: 0.5rem 0;
+                }
+            }
+        }
+        
+        .header_title {
+            display: inline-block;
+            color: #fff;
+            font-size: 1.8rem;
+            @include center;
+        }

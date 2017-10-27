@@ -1,0 +1,150 @@
+
+.showGame {
+  @include wh(77%, 100%);
+background: #e5e3e3;
+  padding-bottom: 5.5rem;
+  overflow-y: auto;
+  position: relative;
+  padding-top: 5.5rem;
+  .game_top {
+    width: 73%;
+    height: 6rem;
+    position: fixed;
+    top: 3.0rem;
+    background: #e5e3e3;
+    right: 1%;
+    z-index: 50;
+    padding-top: 0.5rem;
+    margin: 1.3rem 0 0 4%;
+    .searchGame {
+      width: 60%;
+      height: 5rem;
+      border-radius: 0.5rem;
+      background: #4c3e25;
+      position: relative;
+      .inp {
+        width: 96%;
+        height: 3rem;
+        background: red;
+        @include center;
+        border-radius: 2rem;
+        position: relative;
+        .inp_put {
+          width: 100%;
+          height: 100%;
+          border-radius: 1.1rem;
+          background: #d4cdbc;
+          padding: 0 3rem 0 5%;
+          font-size: 1rem;
+        }
+        .search {
+          width: 2.2rem;
+          //                       height: 100%;
+          height: 2.5rem;
+          background: url(../../assets/Android/drawable-xhdpi/search.png) no-repeat;
+          background-size: 100%;
+          position: absolute;
+          top: 50%;
+          margin-top: -1rem;
+          right: 5%;
+          opacity: 0.8;
+        }
+
+        .search:hover{
+          opacity: 0.8;
+        }
+      }
+    }
+    .game_select {
+      width: 38%;
+      height: 5rem;
+      border-radius: 0.5rem;
+      background: #4c3e25;
+      position: relative;
+
+      .el-dropdown{
+        width: 100%;
+        @include center;
+        text-align: center;
+        span{
+          color: #fff;
+          font-size: 1.6rem;
+        }
+        i{
+          color: #fff;
+
+        }
+      }
+    }
+  }
+  
+
+  .game_li {
+    width: 45.5%;
+    margin: 1rem 0 0 4%;
+    background: #4c3d26;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.3rem;
+    position: relative;
+    
+    .gameImg{
+         border-radius: 0.5rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.6rem;
+      color: #fff;
+      margin-bottom: 0.2rem;
+      width: 75%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin: 0 auto;
+    }
+    .game_btn {
+      width: 100%;
+      z-index: 33;
+      padding: 0.4rem 0rem;
+      img {
+        width: 49%;
+      }
+    }
+  }
+  
+   .game_li.submenu{
+    .game_btn {
+      width: 100%;
+      z-index: 33;
+      padding: 0.4rem 0rem;
+      img {
+          width: 100%;
+      }
+    }
+  }
+  
+  
+  .loading {
+    width: 10rem;
+    height: 10rem;
+    z-index: 999;
+    overflow: hidden;
+    position: fixed;
+    left: 61.5%;
+    margin-left: -5rem;
+    top: 50%;
+    margin-top: -5rem;
+  }
+  .aiglo_game {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 60;
+    background: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.el-dropdown-menu{
+  font-size: 1.6rem;
+}
